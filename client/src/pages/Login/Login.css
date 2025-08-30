@@ -1,0 +1,71 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* מרכז ממש באמצע */
+  background: #f5f5f5;
+  direction: rtl; /* מימין לשמאל */
+}
+
+.login-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: right; /* יישור טקסט לימין */
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.login-form input {
+  display: block;
+  margin: 0 auto 12px auto; /* מרכז את האינפוטים */
+  width: 90%; /* פחות מרוחב מלא, כדי שיראה אסתטי */
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  text-align: right; /* לכתוב טקסט מימין */
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form p {
+  color: red;
+  font-size: 12px;
+  margin: -8px 0 10px 0;
+  text-align: right;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px 14px;
+  background: #007bff;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-form button:hover {
+  background: #0056b3;
+}
+

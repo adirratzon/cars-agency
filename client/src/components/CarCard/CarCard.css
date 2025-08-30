@@ -1,0 +1,122 @@
+.car-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* צל קצת פחות */
+  padding: 16px 20px;  /* הפחת padding פנימי */
+  margin-bottom: 20px;
+  max-width: 440px;    /* קטן קצת מרוחב 480 */
+  transition: transform 0.2s ease;
+  direction: rtl;
+  font-size: 0.9rem;   /* להקטין קצת את הטקסט */
+}
+
+.car-card:hover {
+  transform: translateY(-4px);
+}
+
+.car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.car-header h2 {
+  margin: 0;
+  font-size: 1.2rem; /* להקטין קצת את הכותרת */
+  margin-bottom: 6px;
+}
+
+.car-year {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 320px; /* קטן יותר */
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.gallery-button {
+  background-color: var(--color-primary-light);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.gallery-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.car-info {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.car-info p {
+  margin: 4px 0;
+}
+
+.car-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.new-price {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.contact-button {
+  display: block; /* בכדי שיתפוס רוחב ויהיה באמצע */
+  width: 55%;
+  margin: 16px auto 0; /* למרכז עם מרווח למעלה */
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(56, 142, 60, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%);
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.6);
+}

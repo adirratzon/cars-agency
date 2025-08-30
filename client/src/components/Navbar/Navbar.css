@@ -1,0 +1,117 @@
+/* הגדר משתני צבע עיקריים */
+:root {
+  --color-bg: #FFFFFF;
+  /* רקע לבן */
+  --color-primary: #007BFF;
+  /* כחול נקי */
+  --color-primary-light: #E7F1FF;
+  /* כחול בהיר לפופים וכפתורים */
+  --color-text: #333333;
+  /* טקסט כהה לקריאות טובה */
+  --color-muted: #6C757D;
+  /* טקסט משני */
+}
+
+/* כלליות על הדף */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.navbar {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  gap: 1.5rem;
+}
+
+.navbar-logo img.logo-image {
+  max-height: 40px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
+}
+
+/* אייקונים */
+.navbar-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.icon-button:hover {
+  color: var(--color-primary);
+}
+
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-links li a:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+/* אם תרצה קישורי כפתור מובחנים */
+.navbar-links li a.button {
+  background-color: var(--color-primary);
+  color: #FFF;
+}
+
+.navbar-links li a.button:hover {
+  background-color: #0056b3;
+  /* גוון כהה יותר */
+}
+
+/* דוגמה לסגנון כותרת ראשית בעמוד */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  margin-top: 0;
+}
+
+/* קונטיינר כללי לעימוד התוכן */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
